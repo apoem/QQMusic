@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+* body {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  font-size: 12px;
+}
+* body .wrapper {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+* body .wrapper .song-img {
+  position: relative;
+  width: 70%;
+  height: 0;
+  padding-top: 70%;
+  margin: 0 auto;
+}
+* body .wrapper .song-img .img-box {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* body .wrapper .song-img .img-box img {
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+}
+* body .wrapper .song-info {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  height: 126px;
+}
+* body .wrapper .song-info .song-name {
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 8px;
+}
+* body .wrapper .process {
+  display: flex;
+}
+* body .wrapper .process .cur-time,
+* body .wrapper .process .all-time {
+  width: 60px;
+  height: 40px;
+  color: #eee;
+  text-align: center;
+  line-height: 40px;
+}
+* body .wrapper .process .process-wrap {
+  flex: 1;
+  border: 1px solid blueviolet;
+}
+* body .wrapper .control {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+}
+* body .wrapper .control .btn {
+  flex: 1;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center;
+}
+* body .wrapper .control .like {
+  background-image: url('../images/icon-like.png');
+}
+* body .wrapper .control .like.liking {
+  background-image: url('../images/icon-like-solid.png');
+}
+* body .wrapper .control .prev {
+  background-image: url('../images/icon-prev.png');
+}
+* body .wrapper .control .play {
+  background-image: url('../images/icon-play.png');
+}
+* body .wrapper .control .play.pause {
+  background-image: url('../images/icon-pause.png');
+}
+* body .wrapper .control .next {
+  background-image: url('../images/icon-next.png');
+}
+* body .wrapper .control .list {
+  background-image: url('../images/icon-list.png');
+}
